@@ -1,0 +1,45 @@
+           /* Pseudo elementler */
+
+
+p::first-line{
+    font-weight: bold;
+    color: red;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+p::first-letter{
+    font-size: 30px;
+}
+
+
+            /* Pseudo class */ 
+ul li{
+    padding:10px ;
+    margin-bottom: 10px ;
+}
+
+ul li:first-child{
+    background-color: yellowgreen;
+}
+
+ul li:last-child{
+    background-color: red;
+}
+
+a:visited{
+color:darkorange;
+
+}
+a:hover{
+    color: white;
+    background: blueviolet;
+}
+
+a{
+    padding:10px ;
+    margin-bottom: 10px;
+    text-decoration: none;
+    width: 450px;
+    display: block;
+}

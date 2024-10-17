@@ -1,0 +1,187 @@
+ /*1*/
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*2*/
+html {
+    font-size: 10px;
+}
+
+
+/*4*/
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+
+/*7*/
+a {
+    text-decoration: none;
+}
+
+
+/*12*/
+ul{
+   list-style: none;
+}
+
+/*9 html deki containera clearfix ekledik*/
+.clearfix::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/*5*/
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+
+/* Navbar */
+/*3*/
+nav {
+    font-family: Montserrat;
+    background-color: #2C3E4F;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /*position ekledik*/
+    position: fixed;
+    width: 100%;
+}
+
+
+/*6*/
+#logo-box {
+    float: left;
+    padding-top: 0.5rem;
+}
+
+
+/*7*/
+.logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+
+/*8*/
+#nav-links {
+    float: right;
+}
+
+/*10*/
+.nav-item{
+   float: left;
+   margin: 0.5rem;
+}
+
+/*11*/
+.link{
+    color: #fff;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;
+    transition: 2s;
+}
+
+/*13*/
+.link:hover{
+  color: gold;
+}
+
+
+/*14*/
+header{
+    background-color: #1ABC9B;
+    height: 700px;
+
+    /*lorem yazısı okunması için navbarın altında kalması gerek*/
+    padding-top: calc(106px + 6rem);
+    text-align: center;
+}
+
+
+/*14*/
+.profile{
+    max-width: 260px;
+    height: auto;
+}
+
+/*15*/
+h1,h2,h3,h4,h5{
+    font-weight: 700px;
+    font-family: Montserrat;
+}
+
+/*16*/
+header h1{
+    color: #fff;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+
+/*17 yıldız ekleme*/
+.yildiz-light{
+    /*sadece border ın üst kısmını aldık ve
+      padding iptal ettik*/
+      border-top: 0.4rem solid #fff;
+
+    /* boyutunu ayarladık*/
+      max-width: 25rem;
+
+    /* ortaya aldık*/  
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2.5rem;
+
+    /* kıvrım ekledik*/  
+    border-radius: 10px;
+
+    /*yıldızın hr nin altında kalmaması için overflow*/
+    overflow: visible;
+
+    /*yildiz ve hr arasi yükselik farkı*/
+    height: 0;
+} 
+
+.yildiz-light::after{
+      content: "\2605";/* yildizin kodunu yazdık */
+      color: #fff;
+      font-weight: 900;
+      font-size: 3.2rem;
+      
+      /*yildizi yukarı aldik*/
+      position: relative;
+      top: -29px;
+
+      /*yildizin arkaplan rengini zemin rengi yaptık*/
+      background-color: #1ABC9B;
+
+      /*yildiz'a padding verdik */
+      padding: 0 8px;
+}
+
+header h2{
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: "Lato";
+    font-weight: 300;
+    padding-top: 10px;
+}

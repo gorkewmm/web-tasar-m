@@ -1,0 +1,21 @@
+
+h2[title="Başlık1"]{
+    color: blue;
+}
+
+p[title="paragraf1"]{
+    color: red;
+    text-align: end;
+}
+
+input[type="text"]{
+    background-color: fuchsia;
+}
+
+input[type="button"]{
+    color:forestgreen;
+}
+
+a[target="_blank"]{
+    color:red
+}

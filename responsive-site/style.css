@@ -1,0 +1,148 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 7px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 40px;
+    text-align: center;
+    background-color: #333;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    padding: 1.6rem;
+   
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    height: 46rem;
+   
+}
+
+header .bg-images{
+    position: absolute;
+    background-image: url(images/resim1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.btn{
+    display:inline-block;
+    background-color: lightblue;
+    color: #fff;
+    border: solid 2px goldenrod;
+    padding: 1.6rem 12.8rem;
+    margin: 0.5rem 0;
+}
+
+.btn:hover{
+    background-color: bisque;
+    color: green;
+    transition: all 5.4s;
+}
+
+#section1{
+      background-color: azure;
+      color: #333;
+      padding: 3.2rem 0;
+}
+
+#section2{
+    padding: 2rem ;
+}
+
+#section2 ul{
+    list-style: none;
+}
+
+#section2 li{
+      background-color: #fff;
+      color: #333;
+      margin-bottom: 5.5rem;
+}
+
+.col-content{
+    padding: 1.5rem;
+}
+
+#section3{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem;
+}
+
+#section4 .box{
+    padding: 5rem;
+}
+
+#section4 .box:first-child{
+    background-color: darkslategray;
+
+}
+
+
+
+footer{
+    padding: 4rem;
+    background-color: black;
+}
+
+footer a {
+    color: yellowgreen;
+}
+
+footer a:hover{
+   color: red;
+   transition: 5s;
+}
+
+@media screen and (min-width:800px) {
+    html{
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    html{
+        font-size: 11px;
+    }
+  
+    #section2 li{
+        width: 35%;
+        margin: 1%;
+        display: inline-block;
+    } 
+    
+    .box{
+        width: 50%;
+        float: left;
+    }
+}
