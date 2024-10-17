@@ -1,263 +1,286 @@
  /*1*/
  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
 
 
-/*2*/
-html {
-    font-size: 10px;
-}
+ /*2*/
+ html {
+     font-size: 10px;
+ }
 
 
-/*4*/
-body {
-    font-family: "Lato", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.5;
-    background-color: #fff;
-}
+ /*4*/
+ body {
+     font-family: "Lato", sans-serif;
+     font-size: 1.6rem;
+     font-weight: 400;
+     line-height: 1.5;
+     background-color: #fff;
+ }
 
 
-/*7*/
-a {
-    text-decoration: none;
-}
+ /*7*/
+ a {
+     text-decoration: none;
+ }
 
 
-/*12*/
-ul{
-   list-style: none;
-}
+ /*12*/
+ ul {
+     list-style: none;
+ }
 
-/*9 html deki containera clearfix ekledik*/
-.clearfix::after {
-    content:"";
-    display: block;
-    clear: both;
-}
+ /*9 html deki containera clearfix ekledik*/
+ .clearfix::after {
+     content: "";
+     display: block;
+     clear: both;
+ }
 
-/*5*/
-.container {
-    width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
-
-/* Navbar */
-/*3*/
-nav {
-    font-family: Montserrat;
-    background-color: #2C3E4F;
-    color: #fff;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    /*position ekledik*/
-    position: fixed;
-    width: 100%;
-}
+ /*5*/
+ .container {
+     width: 1140px;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 0.5rem;
+     padding-right: 0.5rem;
+ }
 
 
-/*6*/
-#logo-box {
-    float: left;
-    padding-top: 0.5rem;
-}
+ /* Navbar */
+ /*3*/
+ nav {
+     font-family: Montserrat;
+     background-color: #2C3E4F;
+     color: #fff;
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+     /*position ekledik*/
+     position: fixed;
+     width: 100%;
+ }
 
 
-/*7*/
-.logo {
-    color: #fff;
-    font-weight: 700;
-    font-size: 2.5rem;
-}
+ /*6*/
+ #logo-box {
+     float: left;
+     padding-top: 0.5rem;
+ }
 
 
-/*8*/
-#nav-links {
-    float: right;
-}
-
-/*10*/
-.nav-item{
-   float: left;
-   margin: 0.5rem;
-}
-
-/*11*/
-.link{
-    color: #fff;
-    font-weight: 700;
-    display: block;
-    padding: 1.6rem;
-    letter-spacing: 0.1rem;
-    transition: 2s;
-}
-
-/*13*/
-.link:hover{
-  color: gold;
-}
+ /*7*/
+ .logo {
+     color: #fff;
+     font-weight: 700;
+     font-size: 2.5rem;
+ }
 
 
-/*14*/
-header{
-    background-color: #1ABC9B;
-    height: 700px;
+ /*8*/
+ #nav-links {
+     float: right;
+ }
 
-    /*lorem yazısı okunması için navbarın altında kalması gerek*/
-    padding-top: calc(106px + 6rem);
-    text-align: center;
-}
+ /*10*/
+ .nav-item {
+     float: left;
+     margin: 0.5rem;
+ }
 
+ /*11*/
+ .link {
+     color: #fff;
+     font-weight: 700;
+     display: block;
+     padding: 1.6rem;
+     letter-spacing: 0.1rem;
+     transition: 2s;
+ }
 
-/*14*/
-.profile{
-    max-width: 260px;
-    height: auto;
-}
-
-/*15*/
-h1,h2,h3,h4,h5{
-    font-weight: 700px;
-    font-family: Montserrat;
-}
-
-/*16*/
-header h1{
-    color: #fff;
-    font-size: 6rem;
-    text-transform: uppercase;
-}
+ /*13*/
+ .link:hover {
+     color: gold;
+ }
 
 
-/*17 yıldız ekleme*/
-.yildiz-light{
-    /*sadece border ın üst kısmını aldık ve
+ /*14*/
+ header {
+     background-color: #1ABC9B;
+     height: 700px;
+
+     /*lorem yazısı okunması için navbarın altında kalması gerek*/
+     padding-top: calc(106px + 6rem);
+     text-align: center;
+ }
+
+
+ /*14*/
+ .profile {
+     max-width: 260px;
+     height: auto;
+ }
+
+ /*15*/
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+     font-weight: 700px;
+     font-family: Montserrat;
+ }
+
+ /*16*/
+ header h1 {
+     color: #fff;
+     font-size: 6rem;
+     text-transform: uppercase;
+ }
+
+
+ /*17 yıldız ekleme*/
+ .yildiz-light {
+     /*sadece border ın üst kısmını aldık ve
       padding iptal ettik*/
-      border-top: 0.4rem solid #fff;
+     border-top: 0.4rem solid #fff;
 
-    /* boyutunu ayarladık*/
-      max-width: 25rem;
+     /* boyutunu ayarladık*/
+     max-width: 25rem;
 
-    /* ortaya aldık*/  
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 2.5rem;
+     /* ortaya aldık*/
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 2.5rem;
 
-    /* kıvrım ekledik*/  
-    border-radius: 10px;
+     /* kıvrım ekledik*/
+     border-radius: 10px;
 
-    /*yıldızın hr nin altında kalmaması için overflow*/
-    overflow: visible;
+     /*yıldızın hr nin altında kalmaması için overflow*/
+     overflow: visible;
 
-    /*yildiz ve hr arasi yükselik farkı*/
-    height: 0;
-
-    
-} 
-/*18*/
-.yildiz-light::after{
-      content: "\2605";/* yildizin kodunu yazdık */
-      color: #fff;
-      font-weight: 900;
-      font-size: 3.2rem;
-      
-      /*yildizi yukarı aldik*/
-      position: relative;
-      top: -29px;
-
-      /*yildizin arkaplan rengini zemin rengi yaptık*/
-      background-color: #1ABC9B;
-
-      /*yildiz'a padding verdik */
-      padding: 0 8px;
-      
-}
-
-/*18*/
-header h2{
-    color: #fff;
-    font-size: 2.4rem;
-    font-family: "Lato";
-    font-weight: 300;
-    padding-top: 10px;
-}
-
-/*19 portfolyo bölümü */
-#portfolyo{
-    height: 600px;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    text-align: center;
-    background-color: #fff;
-}
-
-/*20 yıldız navbar ın üstüne çıkmasın*/
-nav{
-    /*navbar tüm ögelerin üstünde olsun*/
-    z-index: 1;
-}
-
-/*21*/
-section h2{
-    font-size: 4.8rem;
-    color: #2D3D4F;
-}
+     /*yildiz ve hr arasi yükselik farkı*/
+     height: 0;
 
 
-/*22*/
-.yildiz-dark{
-    border-top: 0.4rem solid #2D3D4F ;
-    margin-top: 20px;
-    max-width: 25rem;
-    margin-left: auto;
-    margin-right: auto;
-    /* kıvrım ekledik*/  
-    border-radius: 10px;
+ }
 
-    /*yıldızın hr nin altında kalmaması için overflow*/
-    overflow: visible;
-    
-    /*saçma görüntünün ortadan kalkması için*/
-    height: 0;
-}
+ /*18*/
+ .yildiz-light::after {
+     content: "\2605";
+     /* yildizin kodunu yazdık */
+     color: #fff;
+     font-weight: 900;
+     font-size: 3.2rem;
 
-/*23*/
-.yildiz-dark::after{
-    content: "\2605";
-    font-size: 3.2rem;
-    font-weight: 900;
-    
-    position: relative;
-    top: -30px;
+     /*yildizi yukarı aldik*/
+     position: relative;
+     top: -29px;
 
-    background-color: #fff;
-    /*yildiz'a padding verdik */
-    padding: 0 8px;
-}
+     /*yildizin arkaplan rengini zemin rengi yaptık*/
+     background-color: #1ABC9B;
+
+     /*yildiz'a padding verdik */
+     padding: 0 8px;
+
+ }
+
+ /*18*/
+ header h2 {
+     color: #fff;
+     font-size: 2.4rem;
+     font-family: "Lato";
+     font-weight: 300;
+     padding-top: 10px;
+ }
+
+ /*19 portfolyo bölümü */
+ #portfolyo {
+     height: 600px;
+     padding-top: 10rem;
+     padding-bottom: 10rem;
+     text-align: center;
+     background-color: #fff;
+ }
+
+ /*20 yıldız navbar ın üstüne çıkmasın*/
+ nav {
+     /*navbar tüm ögelerin üstünde olsun*/
+     z-index: 1;
+ }
+
+ /*21*/
+ section h2 {
+     font-size: 4.8rem;
+     color: #2D3D4F;
+ }
 
 
-/*24 görsel ekleme buradan itibaren başladı*/
-.kolon{
-    float: left;
-    width: 33%;
-    padding: 10px;
-}
+ /*22*/
+ .yildiz-dark {
+     border-top: 0.4rem solid #2D3D4F;
+     margin-top: 20px;
+     max-width: 25rem;
+     margin-left: auto;
+     margin-right: auto;
+     /* kıvrım ekledik*/
+     border-radius: 10px;
 
-.portfolyoimg{
-    
-}
+     /*yıldızın hr nin altında kalmaması için overflow*/
+     overflow: visible;
 
-.img-p{
-    max-width: 100%;
-    height: auto;
-    
-    
-}
+     /*saçma görüntünün ortadan kalkması için*/
+     height: 0;
+ }
+
+ /*23*/
+ .yildiz-dark::after {
+     content: "\2605";
+     font-size: 3.2rem;
+     font-weight: 900;
+
+     position: relative;
+     top: -30px;
+
+     background-color: #fff;
+     /*yildiz'a padding verdik */
+     padding: 0 8px;
+ }
+
+
+ /*24 görsel ekleme buradan itibaren başladı*/
+ .kolon {
+     float: left;
+     width: 33%;
+     padding: 20px;
+ }
+
+ /*25*/
+ .img-p {
+     max-width: 100%;
+     height: auto;
+
+ }
+
+
+ /*26 overlay burda başladı*/
+ .portfolyoimg {
+     position: relative;
+ }
+
+
+ .img-p {
+     display: block;
+ }
+
+ .img-overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background-color: #1ABC9B;
+     opacity: 1;
+ }
